@@ -5,18 +5,19 @@
 
 <main>
     <div>
-        <h1>My Lists</h1>
+        <h1>Todos</h1>
         <table>
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Number of Items</th>
+                    <th>Task Count</th>
                 </tr>
             </thead>
             <tbody>
                 {% for todo_list in todo_lists %}
                     <tr>
-                        <td>{{ todo_list.name }}</td>
+                        <td><a href="{% url "todo_list_detail" id=todo_list.id %}">{{ todo_list.name}}</a></td>
+                        <td>{{todo_list.rodoitem_set.count}}</td>
                     </tr>
                 {% endfor %}
             </tbody>
