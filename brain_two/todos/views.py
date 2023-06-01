@@ -11,7 +11,7 @@ def todo_list_list(request):
 
 def todo_list_detail(request, id):
     todo_list = get_object_or_404(TodoList, id=id)
-    tasks = TodoItem.objects.filter(todo_list=todo_list)
+    tasks = TodoItem.objects.filter(list=todo_list)
     return render(
         request,
         "todos/todo_list_detail.html",
