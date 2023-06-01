@@ -18,7 +18,7 @@ def todo_list_detail(request, id):
         {"todo_list": todo_list, "tasks": tasks},
     )
 
-    # jen may 31    MU*ST MATCH NAMES FDLKJKRKT":P@#QR  #####SCREEN SHOTS@@#######
+    # jen may 31    MU*ST MATCH NAMES FDLKJKRKT":P@#QR  #####SCREEN SHOTS@@######### come crawling fasterrrrrrrrr, #your lyric here.
 
     # IMPORTANT#
 
